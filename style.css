@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #B6BBC4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    padding-left: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+button{
+    background-color: #31304D;
+    color: #F0ECE5;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+button:hover{
+    background-color: #F0ECE5;
+    color: #31304D;
+}
+h1{
+    color: #F0ECE5;
+    margin-top: 20px;
+}
+#brand{
+    color: #161A30;
+}
+#ageJoke{
+    margin-top: 10px;
+    font-size: larger;
+}
+#gif{
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+}
