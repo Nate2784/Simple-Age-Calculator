@@ -5,8 +5,12 @@ let agejokeElement = document.getElementById('ageJoke')
 
 let birthDate = () => prompt('Enter your birth year')
 const calcAge = (birthDate) =>{
+    if(birthDate==true){
     let age = currentYear - birthDate()
     return age
+    }else{
+        birthDate();
+    }
 }
 let ageJoke = (age) =>{
     if(age>18){
@@ -20,7 +24,7 @@ let ageJoke = (age) =>{
 } 
 let getAge = (calcAge,ageJoke) => {
     var age = calcAge(birthDate);
-    if(age<0){
+    if(age<0||age==false){
         currentYearElement.innerText = `Please enter an appropriate date, And try again.`;
     }else{
     currentYearElement.innerText = `You are ${age} Years old.`;
